@@ -2,12 +2,12 @@ import React from 'react';
 import { actors } from '../data';
 
 const actorsArr = (actors) => {
-  return movies.map(actor => {
+  return actors.map(actor => {
     return (
       <div className="actor">
         <p>Name: {actor.name}</p>
         <ul>
-          {actor.movies.map(movie => <li>{movie}</li>)}
+          {actor.movies.map(actor => <li>{movie}</li>)}
         </ul>
       </div>
     )
