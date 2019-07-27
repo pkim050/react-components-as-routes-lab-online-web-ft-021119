@@ -1,10 +1,25 @@
 import React from 'react';
 import { movies } from '../data';
 
+const movieArr = (movies) => {
+  return movies.map(movie => {
+    return (
+      <div className="movie">
+        <p>Title: {movie.title}</p>
+        <p>Time: {movie.time}</p>
+        <ul>
+          {movie.genres.map(genre => <li>{genre}</li>)}
+        </ul>
+      </div>
+    )
+  })
+}
+
 const Movies = () => {
   return (
     <div>
-        {/*{code here}*/}
+        <h1>Movies Page</h1>
+          {movieArr(movies)}
     </div>
   );
 };
