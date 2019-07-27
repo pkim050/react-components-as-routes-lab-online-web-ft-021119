@@ -7,7 +7,7 @@ const actorsArr = (actors) => {
       <div className="actor">
         <p>Name: {actor.name}</p>
         <ul>
-          {actor.movies.map(movie => <li>{movie}</li>)}
+          Movies: {actor.movies.map(movie => <li>{movie}</li>)}
         </ul>
       </div>
     )
